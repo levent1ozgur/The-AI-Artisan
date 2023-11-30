@@ -1,6 +1,9 @@
 # The-AI-Artisan
 
-### Welcome to The AI Artisan, where I'm on a journey to bring the magic of AI to life through pictures! I'm an entry-level prompt engineer, and this blog is my canvas for sharing the incredible world of AI-generated images in a way that's easy to understand.
+### Sculpting Imaginations with Neural Wonders
+
+
+Welcome to The AI Artisan, where I'm on a journey to bring the magic of AI to life through pictures! I'm an entry-level prompt engineer, and this blog is my canvas for sharing the incredible world of AI-generated images in a way that's easy to understand.
 
 As I take my first steps into the exciting world of prompt engineering, I'm inviting you to join me on this adventure. You don't need to be a tech expert to appreciate the wonders we can create with a bit of code and a lot of imagination.
 
