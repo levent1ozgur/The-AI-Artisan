@@ -1,6 +1,8 @@
 body {
   background-color: #18181B;
   font-family: sans-serif;
+  text-align: center;
+  color: white;
 }
 
 #gallery {
@@ -41,7 +43,6 @@ img {
   transition: opacity 0.3s;
 }
 p {
-  text-color: white;
   font-size: 10pt;
   max-width: 768px;
 }
