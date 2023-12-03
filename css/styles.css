@@ -5,16 +5,20 @@ body {
 
 #gallery {
   display: flex;
-  flex-wrap: wrap; /* Eklenen satır: Galeri elemanlarını sırala */
-  gap: 5px; /* Eklenen satır: Elemanlar arasındaki boşluğu ayarla */
+  flex-wrap: wrap; 
+  gap: 5px; 
 }
 
 #gallery img {
   width: 100%;
   height: auto;
   margin-bottom: 5px;
-  transition: filter 0.3s; /* Süreyi kısalttım, 2s çok uzun olabilir */
+  transition: filter 0.3s; 
   filter: grayscale(100%);
+}
+#gallery img:hover {
+  transition: filter 0.3s; 
+  filter: none(100%);
 }
 
 .image-container {
@@ -23,7 +27,7 @@ body {
 }
 
 img {
-  max-width: 100%; /* Eklenen satır: Resmi genişliği container'a sığdır */
+  max-width: 100%; 
   height: auto;
   object-fit: cover;
 }
@@ -47,7 +51,7 @@ img {
 
 @media (max-width: 1200px) {
   #gallery {
-    flex-wrap: wrap; /* Eklenen satır: Elemanları sırala */
+    flex-wrap: wrap; 
   }
 }
 
