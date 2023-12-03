@@ -14,11 +14,6 @@ body {
   height: auto;
   margin-bottom: 5px;
   transition: filter 0.3s; 
-  filter: grayscale(100%);
-}
-#gallery img:hover {
-  transition: filter 0.3s; 
-  filter: none(100%);
 }
 
 .image-container {
