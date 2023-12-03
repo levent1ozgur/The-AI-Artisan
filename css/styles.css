@@ -1,8 +1,6 @@
 body {
   background-color: #18181B;
   font-family: sans-serif;
-  text-align: center;
-  color: white;
 }
 
 #gallery {
@@ -29,10 +27,9 @@ img {
   object-fit: cover;
 }
 
-.image-caption {
-  font-size: 10pt;
+.image-caption-top,
+.image-caption-bottom {
   position: absolute;
-  bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.7);
@@ -42,12 +39,15 @@ img {
   opacity: 0;
   transition: opacity 0.3s;
 }
-p {
-  font-size: 10pt;
-  max-width: 768px;
-}
-.image-container:hover .image-caption {
+
+.image-container:hover .image-caption-top {
   opacity: 1;
+}
+
+.image-container:hover .image-caption-bottom {
+  opacity: 1;
+  bottom: 0; 
+  top: auto;
 }
 
 @media (max-width: 1200px) {
