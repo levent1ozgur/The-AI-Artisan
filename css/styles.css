@@ -40,10 +40,10 @@ img {
   opacity: 0;
   transition: opacity 0.3s;
 }
-p
-{
-    font-size: 10pt;
-    max-width: 768px;
+p {
+  text-color: white;
+  font-size: 10pt;
+  max-width: 768px;
 }
 .image-container:hover .image-caption {
   opacity: 1;
