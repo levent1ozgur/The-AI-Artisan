@@ -82,5 +82,45 @@
     </div>
   </div>
       <button onclick="topFunction()" id="toTopBtn" title="Go to top">Top</button>
+     <script>
+    var prevScrollpos = window.pageYOffset;
+
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+
+      if (prevScrollpos > currentScrollPos) {
+        // Show the navbar when scrolling up
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        // Hide the navbar when scrolling down
+        document.getElementById("navbar").style.top = "-50px";
+      }
+
+      prevScrollpos = currentScrollPos;
+
+      // Check if the user has scrolled down a certain amount
+      var toTopBtn = document.getElementById("toTopBtn");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
+    };
+
+    function myFunction() {
+      var x = document.getElementById("navbar");
+      if (x.className === "") {
+        x.className += "responsive";
+      } else {
+        x.className = "";
+      }
+    }
+
+    // Scroll to the top when the button is clicked
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+  </script>
 </body>
 </html>
