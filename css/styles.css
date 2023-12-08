@@ -6,6 +6,106 @@ body {
 	 background-color: #18181B;
 	 
 }
+  #navbar {
+      background-color: #18181B;
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      text-align: center;
+      z-index: 1000;
+      transition: top 0.3s;
+    }
+
+    #navbar a {
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #F1F0EF;
+      display: inline-block;
+    }
+
+    #navbar a:hover {
+      background-color: #991F36;
+      color: #F1F0EF;
+    }
+
+    .icon {
+      display: none;
+      cursor: pointer;
+    }
+
+    #gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: space-around;
+      padding: 40px;
+    }
+
+    #gallery img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 5px;
+      transition: filter 0.3s;
+    }
+
+    .image-container {
+      position: relative;
+      margin: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .image-caption-top,
+    .image-caption-bottom {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .image-container:hover .image-caption-top {
+      opacity: 1;
+      top: 0;
+      top: center;
+    }
+
+    .image-container:hover .image-caption-bottom {
+      opacity: 1;
+      bottom: 0;
+      bottom: center;
+    }
+
+    #toTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #991F36;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #toTopBtn:hover {
+      background-color: #F1F0EF;
+      color: #991F36;
+    }
+
+
  .title {
 	 font-family: Times New Roman;
 	 font-size: 24px;
@@ -111,3 +211,29 @@ body {
 	 font-weight: 700;
 	 text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
 }
+
+    @media (max-width: 600px) {
+      #navbar a:not(:first-child) {
+        display: none;
+      }
+
+      #navbar a.icon {
+        float: right;
+        display: block;
+      }
+
+      #navbar.responsive {
+        position: relative;
+      }
+
+      #navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      #navbar.responsive a {
+        display: block;
+        text-align: left;
+      }
+    }
