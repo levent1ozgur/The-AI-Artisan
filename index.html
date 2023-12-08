@@ -3,148 +3,36 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>the ai artisan - photo blog</title>
   <meta name="description" content="Sculpting Imaginations with Neural Wonders">
   <meta name="keywords" content="ai, photos">
   <link rel="shortcut icon" type="image/png" href="css/favicon.png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
-
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
   <script type="text/babel" src="scripts/script.js"></script>
-
-  <style>body {
-	 margin: 40px 0;
-	 font-family: Times New Roman;
-	 font-size: 14px;
-	 font-weight: 500;
-	 background-color: #18181B;
-	 
-}
- .title {
-	 font-family: Times New Roman;
-	 font-size: 24px;
-	 font-weight: 700;
-	 color:  #991F36;
-	 text-align: center;
-}
-
-
- .container {
-	 padding: 40px 80px;
-	 display: flex;
-	 flex-wrap: wrap;
-	 justify-content: center;
-}
- .card-wrap {
-	 margin: 10px;
-	 transform: perspective(800px);
-	 transform-style: preserve-3d;
-	 cursor: pointer;
-}
- .card-wrap:hover .card-info {
-	 transform: translateY(0);
-}
- .card-wrap:hover .card-info {
-	 opacity: 1;
-}
- .card-wrap:hover .card-info, .card-wrap:hover .card-info {
-	 transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-}
- .card-wrap:hover .card-info:after {
-	 transition: 5s cubic-bezier(0.23, 1, 0.32, 1);
-	 opacity: 1;
-	 transform: translateY(0);
-}
- .card-wrap:hover .card-bg {
-	 transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
-	 opacity: 0.8;
-}
- .card-wrap:hover .card {
-	 transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
-	 box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, rgba(255, 255, 255, 1) 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
-}
- .card {
-	 position: relative;
-	 flex: 0 0 240px;
-	 width: 240px;
-	 height: 320px;
-	 background-color: #333;
-	 overflow: hidden;
-	 border-radius: 10px;
-	 box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
-	 transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
- .card-bg {
-	 opacity: 0.5;
-	 position: absolute;
-	 top: -20px;
-	 left: -20px;
-	 width: 100%;
-	 height: 100%;
-	 padding: 20px;
-	 background-repeat: no-repeat;
-	 background-position: center;
-	 background-size: cover;
-	 transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-	 pointer-events: none;
-}
- .card-info {
-	 padding: 20px;
-	 position: absolute;
-	 bottom: 0;
-	 color:  #991F36;
-	 transform: translateY(40%);
-	 transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
- .card-info{
-	 opacity: 0;
-	 text-shadow: rgba(0, 0, 0, 1) 0 2px 3px;
-	 transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
- .card-info * {
-	 position: relative;
-	 z-index: 1;
-}
- .card-info:after {
-	 content: '';
-	 position: absolute;
-	 top: 0;
-	 left: 0;
-	 z-index: 0;
-	 width: 100%;
-	 height: 100%;
-	 background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
-	 background-blend-mode: overlay;
-	 opacity: 0;
-	 transform: translateY(100%);
-	 transition: 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
- .card-info h1 {
-	 font-family: "Playfair Display";
-	 font-size: 36px;
-	 font-weight: 700;
-	 text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
-}
- </style>
+  <link rel="stylesheet" href="css/styles.png">
+  <title>the ai artisan - photo blog</title>
 </head>
 <body>
+	
 <h1 class="title">the ai artisan - photo blog</h1>
 
 <div id="app" class="container">
-  <a href="/portraits.html"><card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/0677a4ac-3ff1-4985-a6aa-16a359f3a934/Leonardo_Vision_XL_Chuck_Close_art_Hyperrealism_body_shot_woma_2.jpg">
+  <a href="/portraits.html">
+	  <card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/0677a4ac-3ff1-4985-a6aa-16a359f3a934/Leonardo_Vision_XL_Chuck_Close_art_Hyperrealism_body_shot_woma_2.jpg">
     <h1 slot="header">portraits</h1>
-    
-  </card></a>
-  <card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/414cd4a4-cec7-4014-a2e6-2e51b8628e57/Absolute_Reality_v16_Generate_a_massive_8K_astronomic_landscap_1.jpg">
-    <h1 slot="header">landscapes</h1>
-  
   </card>
-  <card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/8c5e7d46-629c-4a33-b438-d4015f2b1958/Leonardo_Diffusion_Create_an_evocative_image_of_a_majestic_Anc_0.jpg">
-    <h1 slot="header">historical themes</h1>
-    
+  </a>
+	
+  <a href="/landscapes.html">
+	  <card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/414cd4a4-cec7-4014-a2e6-2e51b8628e57/Absolute_Reality_v16_Generate_a_massive_8K_astronomic_landscap_1.jpg">
+    <h1 slot="header">landscapes</h1>  
   </card>
-
+  </a>
+   <a href="/historical-themes.html">
+	   <card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/8c5e7d46-629c-4a33-b438-d4015f2b1958/Leonardo_Diffusion_Create_an_evocative_image_of_a_majestic_Anc_0.jpg">
+    <h1 slot="header">historical themes</h1>    
+  </card>
+  </a>
 </div>
 
 </body>
