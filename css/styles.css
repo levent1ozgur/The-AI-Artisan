@@ -9,7 +9,7 @@ body {
 #navbar {
       background-color: #18181B;
       overflow: hidden;
-      position: absolute;
+      position: relative;
       width: 100%;
       text-align: left;
       z-index: 100;
@@ -20,7 +20,7 @@ body {
       text-decoration: none;
       font-size: 10px;
       color: #F1F0EF;
-      display: inline-block;
+      display: block;
     }
 
     #navbar a:hover {
