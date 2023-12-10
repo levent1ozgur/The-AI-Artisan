@@ -20,12 +20,37 @@
 	 font-weight: 500;
 	 background-color: #18181b;
 }
- .title {
+.title {
+  font-family: Times New Roman;
+  font-size: 36px;
+  font-weight: 700;
+  color: #991f36;
+  text-align: center;
+  transition: color 0.3s; /* Optional: Add a smooth transition effect */
+}
+
+.title:hover {
+  color: #f1f0ef;
+}
+  .description {
 	 font-family: Times New Roman;
+	 color: #F1F0EF;
+	 text-align: left;
+   padding: 0px 100px 0px 100px;
+}
+    h2 {
+	 font-family: Times New Roman;
+   font-style: italic;
 	 font-size: 24px;
-	 font-weight: 700;
-	 color: #991f36;
-	 text-align: center;
+	 font-weight: 600;
+	 text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+   text-align: center;
+}
+  p {
+	 font-family: Times New Roman;
+	 font-size: 20px;
+	 font-weight: 520;
+	 text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
 }
  .container {
 	 padding: 40px 80px;
@@ -71,6 +96,10 @@
 	 border-radius: 10px;
 	 box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
 	 transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+   filter:grayscale(100%);
+}
+ .card:hover {
+	 filter: none;
 }
  .card-bg {
 	 opacity: 0.5;
@@ -123,13 +152,30 @@
 	 font-weight: 700;
 	 text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
 }
+
  
 </style>
 </head>
 <body>
 	
-<h1 class="title">the ai artisan - photo blog</h1>
-
+<h1 class="title">The AI Artisan - Photo Blog</h1>
+  <div class="description">
+<h2>"Sculpting Imaginations with Neural Wonders"</h2>
+<p>
+Welcome to The AI Artisan, where I'm on a journey to bring the magic of AI to life through pictures! This blog is my canvas for sharing the incredible world of AI-generated images in a way that's easy to understand.
+<br>
+<br> 
+I'm inviting you to join me on this adventure. You don't need to be a tech expert to appreciate the wonders we can create with a bit of code and a lot of imagination.
+<br>
+<br>  
+Here, you'll find a collection of images that I've crafted using the power of artificial intelligence. Each picture has a unique story. Think of it as a behind-the-scenes tour of how I use prompts to guide AI algorithms into creating stunning visuals.
+<br>
+<br>  
+If you're a someone curious about what happens when technology meets creativity, The AI Artisan is a welcoming space for you.
+<br>
+<br>  
+I'm learning as I go, and I'm excited to share my progress with you. Join me as we unravel the mysteries of AI-generated art together. Ready to see what happens when pixels meet passion? Welcome to The AI Artisan—where the art of tomorrow is created, one prompt at a time.</p>
+    </div>
 <div id="app" class="container">
   <a href="/portraits.html">
 	  <card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/0677a4ac-3ff1-4985-a6aa-16a359f3a934/Leonardo_Vision_XL_Chuck_Close_art_Hyperrealism_body_shot_woma_2.jpg">
