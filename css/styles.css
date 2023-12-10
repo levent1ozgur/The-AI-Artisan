@@ -1,15 +1,12 @@
-body {
-	 margin: 40px 0;
+body {	 
 	 font-family: Times New Roman;
 	 font-size: 14px;
-	 font-weight: 500;
 	 background-color: #18181B;
 	 
 }  
 #navbar {
       background-color: #18181B;
-      overflow: hidden;
-      position: relative;
+      overflow: hidden;      
       width: 100%;
       text-align: left;
       z-index: 100;
@@ -20,12 +17,12 @@ body {
       text-decoration: none;
       font-size: 10px;
       color: #F1F0EF;
-      display: block;
+      display: inline-block;
     }
 
     #navbar a:hover {
       background-color: #991F36;
-      color: #F1F0EF;
+      color: #18181B;
     }
 
     .icon {
