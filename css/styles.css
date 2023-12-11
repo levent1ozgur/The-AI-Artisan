@@ -1,8 +1,6 @@
 body {	 
-	 font-family: Times New Roman;
-	 font-size: 14px;
-	 background-color: #18181B;
-	 
+	 font-family: Times New Roman;	
+	 background-color: #18181B;	 
 }  
 #navbar {
       background-color: #18181B;
@@ -35,23 +33,22 @@ body {
       flex-wrap: wrap;
       gap: 5px;
       justify-content: space-around;
-      padding: 40px;
+   
     }
 
     #gallery img {
       width: 100%;
       height: auto;
-      margin-bottom: 5px;
+      margin: 5px;
       transition: filter 0.3s;
     }
 
     .image-container {
-      position: relative;
-      margin: 10px;
+      position: relative;     
     }
 
     img {
-      max-width: 100%;
+      max-width: auto;
       height: auto;
       object-fit: cover;
     }
@@ -67,6 +64,7 @@ body {
       padding: 10px;
       opacity: 0;
       transition: opacity 0.3s;
+      margin: 15px;
     }
 
     .image-container:hover .image-caption-top {
@@ -99,3 +97,23 @@ body {
       background-color: #F1F0EF;
       color: #991F36;
     }
+@media screen and (max-width: 1080px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 720px) {
+  body {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 360px) {
+  body {
+    font-size: 8px;
+  }
+}
