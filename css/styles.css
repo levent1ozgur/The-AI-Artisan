@@ -55,7 +55,9 @@ img {
       max-width: auto;
       height: auto;
     }
-
+strong{:
+  color: #991F36;
+}
 .image-caption-top,
 .image-caption-bottom {
   position: absolute; 
