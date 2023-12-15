@@ -8,203 +8,59 @@
   <link rel="shortcut icon" type="image/png" href="css/favicon.png">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/v7.8.0/browser.min.js"></script>
-
   <script type="text/babel" src="scripts/script.js"></script>
-  
+  <link rel="stylesheet" href="css/landing-page.css" />
   <title>the ai artisan - photo blog</title>
-<style>
-	body {
-	 margin: 40px 0;
-	 font-family: Times New Roman;
-	 font-size: 14px;
-	 font-weight: 500;
-	 background-color: #18181b;
-}
-.title {
-  font-family: Times New Roman;
-  font-size: 36px;
-  font-weight: 700;
-  color: #991f36;
-  text-align: center;
-  transition: color 0.3s; /* Optional: Add a smooth transition effect */
-}
-
-.title:hover {
-  color: #f1f0ef;
-}
-  .description {
-	 font-family: Times New Roman;
-	 color: #F1F0EF;
-	 text-align: left;
-         padding: 0px 100px 0px 100px;
-}
-    h2 {
-	 font-family: Times New Roman;
-         font-style: italic;
-	 font-size: 24px;
-	 font-weight: 600;
-	 text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
-         text-align: center;
-}
-  p {
-	 font-family: Times New Roman;
-	 font-size: 20px;
-	 font-weight: 520;
-	 text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
-	text-align: center;
-}
- .container {
-	 padding: 40px 80px;
-	 display: flex;
-	 flex-wrap: wrap;
-	 justify-content: center;
-}
- .card-wrap {
-	 margin: 10px;
-	 transform: perspective(800px);
-	 transform-style: preserve-3d;
-	 cursor: pointer;
-}
- .card-wrap:hover .card-info {
-	 transform: translateY(0);
-}
- .card-wrap:hover .card-info {
-	 opacity: 1;
-}
- .card-wrap:hover .card-info, .card-wrap:hover .card-info {
-	 transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-}
- .card-wrap:hover .card-info:after {
-	 transition: 5s cubic-bezier(0.23, 1, 0.32, 1);
-	 opacity: 1;
-	 transform: translateY(0);
-}
- .card-wrap:hover .card-bg {
-	 transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
-	 opacity: 0.8;
-}
- .card-wrap:hover .card {
-	 transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
-	 box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, rgba(255, 255, 255, 1) 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
-}
- .card {
-	 position: relative;
-	 flex: 0 0 240px;
-	 width: 240px;
-	 height: 320px;
-	 background-color: #333;
-	 overflow: hidden;
-	 border-radius: 10px;
-	 box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
-	 transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-   filter:grayscale(100%);
-}
- .card:hover {
-	 filter: none;
-}
- .card-bg {
-	 opacity: 0.5;
-	 position: absolute;
-	 top: -20px;
-	 left: -20px;
-	 width: 100%;
-	 height: 100%;
-	 padding: 20px;
-	 background-repeat: no-repeat;
-	 background-position: center;
-	 background-size: cover;
-	 transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-	 pointer-events: none;
-}
- .card-info {
-	 padding: 20px;
-	 position: absolute;
-	 bottom: 0;
-	 color: #991f36;
-	 transform: translateY(40%);
-	 transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
- .card-info {
-	 opacity: 0;
-	 text-shadow: rgba(0, 0, 0, 1) 0 2px 3px;
-	 transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
- .card-info * {
-	 position: relative;
-	 z-index: 1;
-}
- .card-info:after {
-	 content: '';
-	 position: absolute;
-	 top: 0;
-	 left: 0;
-	 z-index: 0;
-	 width: 100%;
-	 height: 100%;
-	 background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
-	 background-blend-mode: overlay;
-	 opacity: 0;
-	 transform: translateY(100%);
-	 transition: 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
- .card-info h1 {
-	 font-family: Times New Roman;
-	 font-size: 36px;
-	 font-weight: 700;
-	 text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
-}
-
- 
-</style>
 </head>
 <body>
 	
 <h1 class="title">The AI Artisan - Photo Blog</h1>
-  <div class="description">
+	<div class="description">
 <h2>"Sculpting Imaginations with Neural Wonders"</h2>
-<p>
-Explore a collection of AI-generated visuals and the stories behind them. My project showcasing the magic of AI through images.
-<br>
-<br>  
-I'm continuously learning and eagerly share my progress. Are you prepared to witness the fusion of pixels and passion?
-<br>
-<br>  
-</p>
-<h2>Welcome to the future of art—one prompt at a time.</h2>
-    </div>
-<div id="app" class="container">
-  <a href="/portraits.html">
-	  <card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/0677a4ac-3ff1-4985-a6aa-16a359f3a934/Leonardo_Vision_XL_Chuck_Close_art_Hyperrealism_body_shot_woma_2.jpg">
-    <h1 slot="header">portraits</h1>
-  </card>
-  </a>
-	
+		<p>
+			Explore a collection of AI-generated visuals and the stories behind them. My project showcasing the magic of AI through images.
+			<br>
+			<br>  
+			I'm continuously learning and eagerly share my progress. Are you prepared to witness the fusion of pixels and passion?
+			<br>
+			<br>  
+		</p>
+		<h2>Welcome to the future of art—one prompt at a time.</h2>
+	</div>
+	<div id="app" class="container">
+		<a href="/portraits.html">
+			<card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/0677a4ac-3ff1-4985-a6aa-16a359f3a934/Leonardo_Vision_XL_Chuck_Close_art_Hyperrealism_body_shot_woma_2.jpg">
+				<h1 slot="header">portraits</h1>
+			</card>
+		</a>
+		
   <a href="/landscapes.html">
 	  <card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/414cd4a4-cec7-4014-a2e6-2e51b8628e57/Absolute_Reality_v16_Generate_a_massive_8K_astronomic_landscap_1.jpg">
-    <h1 slot="header">landscapes</h1>  
-  </card>
+		  <h1 slot="header">landscapes</h1>  
+	  </card>
   </a>
-   <a href="/historical.html">
-	   <card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/8c5e7d46-629c-4a33-b438-d4015f2b1958/Leonardo_Diffusion_Create_an_evocative_image_of_a_majestic_Anc_0.jpg">
-    <h1 slot="header">historical</h1>    
+		<a href="/historical.html">
+			<card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/8c5e7d46-629c-4a33-b438-d4015f2b1958/Leonardo_Diffusion_Create_an_evocative_image_of_a_majestic_Anc_0.jpg">
+				<h1 slot="header">historical</h1>   
+				
   </card>
-  </a>
+		</a>
 	 <a href="/futuristic.html">
-	   <card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/9554f688-0dda-4135-af97-61788e742272/Leonardo_Diffusion_XL_Design_an_8K_resolution_image_of_a_bustl_0.jpg">
-    <h1 slot="header">futuristic</h1>    
-  </card>
-  </a>
+		 <card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/9554f688-0dda-4135-af97-61788e742272/Leonardo_Diffusion_XL_Design_an_8K_resolution_image_of_a_bustl_0.jpg">
+			 <h1 slot="header">futuristic</h1>    
+		 </card>
+	 </a>
  <a href="/magical-realms.html">
-	  <card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/61a5ed97-4ea6-48d5-b9b9-73ae24b85583/Leonardo_Diffusion_XL_To_mortals_the_Nazgl_appeared_as_shadowy_0.jpg">
-    <h1 slot="header">magical realms</h1>
-  </card>
-  </a>
+	 <card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/61a5ed97-4ea6-48d5-b9b9-73ae24b85583/Leonardo_Diffusion_XL_To_mortals_the_Nazgl_appeared_as_shadowy_0.jpg">
+		 <h1 slot="header">magical realms</h1>
+	 </card>
+ </a>
 	<a href="/color-themes.html">
-	  <card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/6da5432d-35a5-4527-b8d8-0f61edc4bfed/Default_01000001_0.jpg">
-    <h1 slot="header" style="color: #f1f0ef;">color themes</h1>
-  </card>
-  </a>
-</div>
-
+		<card data-image="https://cdn.leonardo.ai/users/24ba5ca6-0ec4-49e8-a78a-bbd10867d265/generations/6da5432d-35a5-4527-b8d8-0f61edc4bfed/Default_01000001_0.jpg">
+			<h1 slot="header" style="color: #f1f0ef;">color themes</h1>
+		</card>
+	</a>
+	</div>
+	
 </body>
 </html>
