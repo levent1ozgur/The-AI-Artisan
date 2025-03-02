@@ -1,6 +1,6 @@
-# The-AI-Artisan
+**The-AI-Artisan**
 
-### Sculpting Imaginations with Neural Wonders
+**Sculpting Imaginations with Neural Wonders**
 
 Explore The AI Artisan, my personal project dedicated to bringing the enchantment of AI to life through visual storytelling! Within this blog, I serve as a guide into the fascinating realm of AI-generated images, presenting complex concepts in an accessible manner.
 
@@ -12,4 +12,4 @@ Whether you're someone intrigued by the intersection of technology and creativit
 
 I'm continuously learning and eagerly share my progress. Embark with me as we uncover the mysteries of AI-generated art together. Are you prepared to witness the fusion of pixels and passion? 
 
-### The AI Artisan, where the art of tomorrow unfolds through each carefully crafted prompt.
+**The AI Artisan, where the art of tomorrow unfolds through each carefully crafted prompt.**
